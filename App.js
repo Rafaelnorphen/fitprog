@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Onboarding from './components/Onboarding'
+import Getstarted from './components/Getstarted';
+import Loginbtn from './components/Loginbtn';
+import Paginator from './components/Paginator';
+import AppNavigator from './components/Navigation';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Onboarding></Onboarding>
+    <AppNavigator/>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +20,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: '',
     justifyContent: 'center',
   },
 })
