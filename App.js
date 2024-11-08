@@ -9,6 +9,7 @@ import AppNavigator from './components/Navigation';
 export default function App() {
   return (
     <View style={styles.container}>
+    <StatusBar hidden={true} />
     <AppNavigator/>
       <StatusBar style="auto" />
     </View>

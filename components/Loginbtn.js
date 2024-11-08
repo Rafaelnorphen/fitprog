@@ -43,7 +43,7 @@ export default Loginbtn = () => {
                 </View>
 
                 <TouchableOpacity style={styles.buttonContainer}>
-                    <Text style={styles.buttonText}>Login</Text>
+                    <Text style={styles.buttonText} onPress={() => {navigation.navigate('Home')}}>Login</Text>
                 </TouchableOpacity>
 
                 <Text style={styles.orText}>Or login with...</Text>

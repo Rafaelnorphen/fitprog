@@ -5,6 +5,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Loginbtn from "./Loginbtn";
 import Getstarted from "./Getstarted";
 import Register from "./Register";
+import Homescreen from "./Homescreen";
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Get" component={Getstarted} options={{ headerShown: false }} />
         <Stack.Screen name="Login" component={Loginbtn} options={{ headerShown: false }} />
         <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
+        <Stack.Screen name="Home" component={Homescreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
